@@ -8147,6 +8147,8 @@ in
 
   scry = callPackage ../development/tools/scry {};
 
+  dasm = callPackage ../development/compilers/dasm/default.nix { }; 
+
   dbmate = callPackage ../development/tools/database/dbmate {
     inherit (darwin.apple_sdk.frameworks) Security;
   };
